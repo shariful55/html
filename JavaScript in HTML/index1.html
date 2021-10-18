@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example of fBackground image </title>
+</head>
+<body background="https://previews.123rf.com/images/kotenko/kotenko1403/kotenko140300008/26854631-snowy-winter-in-a-mountain-forest-sunny-cold-day-with-snow-covered-trees-carpathian-mountains-ukrain.jpg" >
+
+    <font color="red">
+
+
+        <h1>click on this <a href="https://www.javatpoint.com">link </a> for the Home page of Our Website  </h1>
+    </font>
+
+    <progress value="43" max="100"></progress>
+    <br>
+    <br><br>
+
+<script>
+    var gvalue=1;
+    function abc() {
+        
+        var progressExample =document.getElementById("progress-javascript-example");
+        setInterval(function () {
+            if(gvalue<100){
+                gvalue++;
+                progressExample.value=gvalue;
+            }
+            abc();
+        }, 1000);
+        
+    }
+</script>
+<progress id="progress-javascript-example" min="1" max="100"></progress> <br><br>
+
+<button onclick="abc()">click me </button>
+
+</body>
+</html>

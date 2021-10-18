@@ -1,0 +1,21 @@
+body{
+    text-align: center;
+    color: lavender;
+ }
+ h2{
+     font-style: italic;
+     font-size: 40px;
+     color: skyblue;
+ }
+ p{
+     font-size: 20;
+ }
+ .red{
+     color: red;
+ }
+ .blue{
+     color: blue;
+ }
+ .green{
+     color: green;
+ }

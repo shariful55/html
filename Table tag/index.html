@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table </title>
+
+   
+
+    
+    <!-- <style>
+
+table {
+    border: 2px solid red;
+    background-color: royalblue;
+    border-collapse: collapse;
+    width: 100%;
+}
+th,td {
+    border: 2px solid green;
+    padding: 15px;
+
+}
+
+    </style> -->
+<!-- <style>
+table th,td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+}
+</style> -->
+
+<!-- <style>
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+
+    }
+th td {
+    padding: 10px;
+}
+table #alter tr:nth-child(even){
+    background-color: #eee;
+
+}
+table #alter tr:nth-child(odd){
+    background-color: #fff;
+
+}
+table #alter th {
+    color: white;
+    background-color: gray;
+
+}
+
+
+
+</style> -->
+
+<!-- body{
+    margin-left: 195px
+} -->
+<!-- <style>
+    th{
+        background-color: #6495ed;
+
+    }
+    th,td {
+        border: 1px solid black;
+        
+        
+
+        padding: 10px;
+
+    }
+</style> -->
+
+<style>
+    body{
+        background-color: #e6e6fa;
+    }
+</style>
+
+
+
+</head>
+<body>
+<!-- <table >
+<tr><th>First Name </th><th>Last Name</th><th>Marks </th></tr>
+<tr><td>Sonoo</td><td>Jaiswal</td> <td>60</td></tr>
+<tr><td>james  </td><td>William</td> <td>60</td></tr>
+<tr><td>Swati</td><td>Sironi</td> <td>60</td></tr>
+<tr><td>Chetna</td><td>Singh</td> <td>60</td></tr>
+<tr><td>Sonoo</td><td>Jaiswal</td> <td>60</td></tr>
+<tr><td>Sonoo</td>
+    <td>Jaiswal</td> <td>60</td></tr>
+
+
+</table> -->
+<!-- <table>
+<tr>
+    <th>1 header </th>
+    <th>1 header </th>
+    <th>1 header </th>
+    <th>1 header </th>
+</tr>
+<tr>/
+    <td>1 data </td>
+    <td>1 data </td>
+    <td>1 data </td>
+    <td>1 data </td>
+</tr>
+<tr>
+    <td>2  data </td>
+    <td>2 data </td>
+    <td>2 data </td>
+    <td> 2 data </td>
+</tr>
+<tr>
+    <td>3 data </td>
+    <td>3 data </td>
+    <td>3 data </td>
+    <td>3 data </td>
+</tr>
+<tr>
+    <td>4 data </td>
+    <td>4 data </td>
+    <td>4 data </td>
+    <td>4 data </td>
+</tr>
+
+
+
+</table> -->
+<!-- <table style="100%">
+
+<tr>
+
+    <th>Name </th>
+    <th colspan="2">Mobile No. </th>
+</tr>
+<tr>
+<td>AjeeMaurya kiron</td>
+<td>7503520801</td>
+<td>0194485274</td>
+
+</tr>
+
+</table> -->
+<!-- <table>
+<tr><th>Name </th><td>shariful islam </td></tr> 
+<tr><th rowspan="3">Mobile No. </th><td>01994418095</td></tr>
+<tr><td>01404009490</td></tr>
+<tr><td>01404059491</td></tr>
+
+</table> -->
+<!-- <table>
+    <caption>Student Records </caption>
+    <tr><th>First_Name </th><th>Last_Name</th><th>Marks </th></tr>
+    <tr><td>Vimal</td><td>Jaiswal </td><td>40</td></tr>
+    <tr><td>Mike</td><td>Warm </td><td>50</td></tr>
+    <tr><td>Shane</td><td>Warn </td><td>60</td></tr>
+    <tr><td>Jai </td><td>Malhotra </td><td>70</td></tr>
+</table> -->
+<!-- <table border="1" bgcolor="#98f5ff">
+<thead>
+    <tr>
+        <th>EmpId </th>
+        <th>Name  </th>
+        <th>Email-Id  </th>
+
+
+    </tr>
+
+</thead> -->
+
+
+<!-- <tbody>
+    <tr>
+        <td>121</td>
+        <td>John </td>
+        <td>john123@gmail.com </td>
+        
+    </tr>
+    <tr>
+        <td>122</td>
+        <td>William  </td>
+        <td>william@gmail.com </td>
+        
+        
+    </tr>
+    <tr>
+        <td>123</td>
+        <td>Amit  </td>
+        <td>amitk98@gmail.com </td>
+
+        
+    </tr>
+</tbody>
+
+
+</table> -->
+
+<!-- <h2> Example of td Tag here </h2>
+<table style="border-collapse: collapse;background-color: #dcdcdc;">
+
+<tr>
+    <th>Product</th>
+    <th>Quantity</th>
+    <th>Price</th>
+</tr>
+<tr>
+    <th>T-Shirt</th>
+    <th>5</th>
+    <th>3500</th>
+</tr>
+
+<tr>
+    <th>Jeans</th>
+    <th>2</th>
+    <th>5000</th>
+</tr>
+
+
+
+</table> -->
+
+<h2>Example of template tag </h2>
+<button onclick="clickMe()">Click Me </button> <br>
+<script>
+    alert("Thank you for choosing template. Click OK for image. ")
+
+</script>
+<script>
+    function clickMe(){
+        var x=document.getElementById("template")[0];
+        var clon=x.content.cloneNode(true);
+        document.body.appendChild(clon);
+    }
+</script>
+
+</body>
+</html>

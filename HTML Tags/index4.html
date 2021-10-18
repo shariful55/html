@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Tag </title>
+    <style>
+        button{
+            font-size: 40px;
+           
+        }
+
+
+    </style>
+</head>
+<body>
+   <button name="button" type="button"> Click Here </button> <br>
+    <button name="button" value="OK" type="button" onclick="hello()" ></button>
+
+<form >
+Enter Name: <input type="text " name="name"> <br>
+<button>Submit </button><br>
+<button>OK</button><br>
+<button type="reset"> reset </button>
+
+
+
+
+</form>
+
+
+<!-- <canvas id="mycanvas" width="200" height="100"></canvas>
+<canvas id="mycanvas1" width="300" height="100" style="border: 2px solid #c3c3c3;"></canvas> -->
+
+<!-- <canvas id="myCanvasLine" width="200" height="100" style="border: 1px solid #d3d3d3;" >
+Your broowser dones not support the HTML5 </canvas>
+
+    <script>
+        // function hello() {
+        //     alert("hello javatpoint user ")
+        // }
+        // var c=document.getElementById(:"mycanvas1");
+        // var cctx=c.getContext("2d");
+        // ctx.fillStyle="#FF0000";
+        // ctx.fillRect(0,0,200,100);
+
+        var c=document.getElementById("myCanvasLine");
+        var cctx=c.getContext("2d");
+        ctx.moveTo(0,0);
+        ctx.lineTo(200,100);
+        ctx.stroke();
+
+
+    </script> -->
+    <canvas id="myCanvasCircle" width="200" height="100" style="border:1px solid #d3d3d3;">  
+        Your browser does not support the HTML5 canvas tag.</canvas>  
+        <script>  
+        var c = document.getElementById("myCanvasCircle");  
+        var cctx = c.getContext("2d");  
+        ctx.beginPath();  
+        ctx.arc(95,50,40,0,2*Math.PI);  
+        ctx.stroke();  
+        </script>  
+
+
+
+</body>
+</html>

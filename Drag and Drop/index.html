@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>drag and drop </title>
+</head>
+<body>
+    
+    <h2>Example of drag and drop here </h2>
+    <script>
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+            ev.dataTransfer.setData("text/html", ev.target.id);
+
+        }
+        function drop(ev) {
+            ev.preventDefault();
+            var data=ev.dataTransfer.getData("text/html");
+            ev.target.appendChild(document.getElementById(data))
+        }
+
+    </script>
+    <p>Drat eh javatpoint image into the rectangle: </p>
+    <div id="div1" style="width: 350px;height: 100px; padding: 10px; 
+    border: 1px solid #aaaaaa; ondrop="drop(event)" ondrag="allowDrop(event)
+    "></div>
+    <img id="drag1" src="/htmlpages/images/javatpoint.png" alt="javatpoint ijmage " 
+    
+    draggable="true" ondragstart="drag(event)">
+</body>
+</html>
